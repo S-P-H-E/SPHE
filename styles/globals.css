@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dotted-grid {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Ccircle cx='5' cy='5' r='0.3' fill='%23333333' /%3E%3C/svg%3E");
+    background-size: 30px 30px;
+  }
+  
+body {
+    background-color: #161616;
+}
+
+.mask {
+    -webkit-mask-image: linear-gradient( white 50%, white 50%);
+    mask-image: linear-gradient(to bottom, transparent, white 50%, white 50%, transparent);
+  }
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Create a custom scrollbar */
+  body {
+    scrollbar-width: thin;
+    scrollbar-color:  #0000004d #ffffff80;
+  }
+  
+  /* Style the thumb of the scrollbar */
+  body::-webkit-scrollbar-thumb {
+    background-color: #0000004d;
+    border-radius: 10px;
+  }
+  
+  /* Style the track of the scrollbar */
+  body::-webkit-scrollbar-track {
+    background-color: #ffffff80;
+  }
+
+  
+  
