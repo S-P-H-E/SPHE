@@ -13,7 +13,7 @@ body {
 
 .mask {
     -webkit-mask-image: linear-gradient( white 50%, white 50%);
-    mask-image: linear-gradient(white 50%, white 50%, transparent);
+    mask-image: linear-gradient(white 50%, white 50%);
   }
 
 /* Hide the default scrollbar */
