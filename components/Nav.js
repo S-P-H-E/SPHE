@@ -1,8 +1,9 @@
 import {MdEmail} from 'react-icons/md';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, config } from 'react-spring';
 
 
 export default function Nav(){
+
     // Navbar Animation
     const logoAnimation = useSpring({
         from: { opacity: 0, transform: 'translateY(130px)' },
@@ -29,18 +30,24 @@ export default function Nav(){
     return (
         <>
         <div className="py-7 px-6 flex justify-between text-[#767676]">
-            <div className="mask">
+            <div className="mask transition-all">
                 <animated.div style={logoAnimation} className="border border-[#767676] px-3 py-1 rounded-full w-fit flex justify-center items-center cursor-pointer transition-all hover:bg-[#767676] hover:text-[#161616]">
                     <MdEmail size={20} className='m-1'/>
                     <button className="text-sm">Get in touch</button>
                 </animated.div>
             </div>
             <div className="mask flex justify-center items-center">
-                <animated.button style={linkAnimation1} className="mx-4 hover:text-[#BDBDBD]">Twitter</animated.button>
+            <animated.div style={linkAnimation1}>
+                <button className="mx-4 hover:text-[#BDBDBD]">Twitter</button>
+            </animated.div>
                 <p className="cursor-default">/</p>
-                <animated.button style={linkAnimation2} className="mx-4 hover:text-[#BDBDBD]">TikTok</animated.button>
+            <animated.div style={linkAnimation2}>
+                <button className="mx-4 hover:text-[#BDBDBD]">TikTok</button>
+            </animated.div>
                 <p className="cursor-default">/</p>
-                <animated.button style={linkAnimation3} className="mx-4 hover:text-[#BDBDBD]">YouTube</animated.button>
+            <animated.div style={linkAnimation3}>
+                <button className="mx-4 hover:text-[#BDBDBD]">YouTube</button>
+            </animated.div>
             </div>
         </div>
         <div className="h-[1px] bg-[#1A1A1A]"/>

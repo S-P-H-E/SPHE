@@ -1,5 +1,5 @@
 import {FiExternalLink} from 'react-icons/fi'
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, config } from 'react-spring';
 
 export default function Home(){
     //Hero Animation
@@ -27,8 +27,8 @@ export default function Home(){
             <div className='mask h-[130px]'>
                 <animated.h2 style={h2Animation} className="font-medium text-6xl text-center">Building high-converting <br/> landing pages for success coaches.</animated.h2>
             </div>
-            <div className='mask'>
-                <animated.button style={buttonAnimation} className="m-6 p-5 px-6 rounded-md border border-[#444444] bg-[#1A1A1A] flex justify-center items-center transition-all hover:scale-90">
+            <div className='mask transition-all hover:scale-90' >
+                <animated.button style={buttonAnimation} className="m-6 p-5 px-6 rounded-md border border-[#444444] bg-[#1A1A1A] flex justify-center items-center">
                     View Portfolio
                     <FiExternalLink className='ml-2'/>
                 </animated.button>
