@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import {MdEmail} from 'react-icons/md';
 import { useSpring, animated } from 'react-spring';
 
