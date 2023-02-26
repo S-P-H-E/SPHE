@@ -11,7 +11,7 @@ export default function Tech() {
   const badgeAnimation = useSpring({
     from: { opacity: 0, transform: 'translateY(130px)' },
     to: { opacity: 3, transform: 'translateY(0)' },
-    delay: 3800,
+    delay: 3500,
   });
 
   const containerRef = useRef(null);

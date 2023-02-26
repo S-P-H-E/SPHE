@@ -1,4 +1,7 @@
 import {MdEmail} from 'react-icons/md';
+import {BsTwitter} from 'react-icons/bs';
+import {BsYoutube} from 'react-icons/bs';
+import {FaTiktok} from 'react-icons/fa';
 import { useSpring, animated, config } from 'react-spring';
 
 
@@ -36,18 +39,23 @@ export default function Nav(){
                     <button className="text-sm">Get in touch</button>
                 </animated.div>
             </div>
-            <div className="mask flex justify-center items-center">
-            <animated.div style={linkAnimation1}>
-                <button className="mx-4 hover:text-[#BDBDBD]">Twitter</button>
-            </animated.div>
-                <p className="cursor-default">/</p>
-            <animated.div style={linkAnimation2}>
-                <button className="mx-4 hover:text-[#BDBDBD]">TikTok</button>
-            </animated.div>
-                <p className="cursor-default">/</p>
-            <animated.div style={linkAnimation3}>
-                <button className="mx-4 hover:text-[#BDBDBD]">YouTube</button>
-            </animated.div>
+            <div className="mask justify-center items-center hidden sm:flex">
+                <animated.div style={linkAnimation1}>
+                    <button className="mx-4 hover:text-[#BDBDBD]">Twitter</button>
+                </animated.div>
+                    <p className="cursor-default">/</p>
+                <animated.div style={linkAnimation2}>
+                    <button className="mx-4 hover:text-[#BDBDBD]">TikTok</button>
+                </animated.div>
+                    <p className="cursor-default">/</p>
+                <animated.div style={linkAnimation3}>
+                    <button className="mx-4 hover:text-[#BDBDBD]">YouTube</button>
+                </animated.div>
+            </div>
+            <div className='flex justify-center items-center sm:hidden'>
+                <BsTwitter className='mx-2'/>
+                <FaTiktok className='mx-2'/>
+                <BsYoutube className='mx-2'/>
             </div>
         </div>
         <div className="h-[1px] bg-[#1A1A1A]"/>

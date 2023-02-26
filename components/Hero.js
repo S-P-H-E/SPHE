@@ -22,10 +22,10 @@ export default function Home(){
     return (
         <div className="flex flex-col justify-center items-center py-40 text-[#BDBDBD]">
             <div className='mask'>
-                <animated.h1 style={h1Animation} className="py-3">Hi, I'm Sphe 👋🏻</animated.h1>
+                <animated.h1 style={h1Animation} className="py-3 text-sm md:text-md">Hi, I'm Sphe 👋🏻</animated.h1>
             </div>
             <div className='mask h-[130px]'>
-                <animated.h2 style={h2Animation} className="font-medium text-6xl text-center">Building high-converting <br/> landing pages for success coaches.</animated.h2>
+                <animated.h2 style={h2Animation} className="font-medium text-3xl md:text-6xl text-center">Building high-converting <br/> landing pages for success coaches.</animated.h2>
             </div>
             <div className='mask transition-all hover:scale-90' >
                 <animated.button style={buttonAnimation} className="m-6 p-5 px-6 rounded-md border border-[#444444] bg-[#1A1A1A] flex justify-center items-center">
