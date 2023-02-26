@@ -2,7 +2,7 @@ import {BsCardHeading} from 'react-icons/bs'
 import {MdWork} from 'react-icons/md'
 import {FaDollarSign} from 'react-icons/fa'
 
-export default function Recents(){
+export default function Offer(){
     return (
         <div className="flex justify-center">
             

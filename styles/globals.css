@@ -9,6 +9,7 @@
   
 body {
     background-color: #161616;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .mask {
@@ -20,23 +21,3 @@ body {
 ::-webkit-scrollbar {
     display: none;
   }
-  
-  /* Create a custom scrollbar */
-  body {
-    scrollbar-width: thin;
-    scrollbar-color:  #0000004d #ffffff80;
-  }
-  
-  /* Style the thumb of the scrollbar */
-  body::-webkit-scrollbar-thumb {
-    background-color: #0000004d;
-    border-radius: 10px;
-  }
-  
-  /* Style the track of the scrollbar */
-  body::-webkit-scrollbar-track {
-    background-color: #ffffff80;
-  }
-
-  
-  

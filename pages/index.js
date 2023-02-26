@@ -3,7 +3,7 @@ import { Inter } from '@next/font/google'
 import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import Tech from '@/components/Tech'
-import Recents from '@/components/Recents'
+import Offer from '@/components/Offer'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
@@ -23,9 +23,9 @@ export default function Home() {
 
       <Hero />
       <Tech />
-      <Recents />
-      <Contact />
+      <Offer />
 
+      <Contact />
       <Footer />
     </>
   )
