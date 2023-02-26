@@ -40,10 +40,10 @@ export default function Nav(){
         <>
         <div className="py-7 px-6 flex justify-between text-[#767676]">
             <div className="mask transition-all">
-                <animated.div style={logoAnimation} onClick={emailBTN} className="border border-[#767676] px-3 py-1 rounded-full w-fit flex justify-center items-center cursor-pointer transition-all hover:bg-[#767676] hover:text-[#161616]">
+                <animated.button style={logoAnimation} onClick={emailBTN} className="border border-[#767676] px-3 py-1 rounded-full w-fit flex justify-center items-center cursor-pointer transition-all hover:bg-[#767676] hover:text-[#161616]">
                     <MdEmail size={20} className='m-1'/>
-                    <button className="text-sm">Get in touch</button>
-                </animated.div>
+                    <div className="text-sm">Get in touch</div>
+                </animated.button>
             </div>
             <div className="mask justify-center items-center hidden sm:flex">
                 <animated.div style={linkAnimation1} onClick={() => {event.preventDefault();window.open('https://twitter.com/uisphe', "_blank");}}>
