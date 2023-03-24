@@ -2,12 +2,20 @@ import {BsCardHeading} from 'react-icons/bs'
 import {MdWork} from 'react-icons/md'
 import {FaDollarSign} from 'react-icons/fa'
 
+import { useSpring, animated, config } from 'react-spring';
+
 export default function Offer(){
+    const headingAnimation = useSpring({
+        from: { opacity: 0, transform: 'translateY(130px)' },
+        to: { opacity: 3, transform: 'translateY(0)' },
+        delay: 4000,
+      });
+
     return (
         <div className="flex justify-center">
             
        <div className='text-[#BDBDBD] justify-center py-28'>
-        <h1 className='font-medium text-2xl text-center py-5'>Transform your digital vision into reality</h1>
+        <animated.h1 style={headingAnimation} className='font-medium text-2xl text-center py-5'>Transform your digital vision into reality</animated.h1>
         <div className="gap-6 hidden sm:flex">
             <div className="py-10">
                 <div className="flex flex-col bg-[#1A1A1A] w-[300px] h-[300px] rounded-md border border-[#444444] p-4">

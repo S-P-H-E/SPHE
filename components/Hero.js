@@ -22,7 +22,7 @@ export default function Home(){
     return (
         <div className="flex flex-col justify-center items-center py-10 md:py-40 text-[#BDBDBD]">
             <div className='mask m-1'>
-                <animated.h1 style={h1Animation} className="md:py-3 text-[14px] md:text-md">Hi, I'm Sphe 👋🏻</animated.h1>
+                <animated.h1 style={h1Animation} className="md:py-3 text-[12px] md:text-md">Hi, I'm Sphe 👋🏻</animated.h1>
             </div>
             <div className='h-fit m-3'>
                 <animated.h2 style={h2Animation} className="font-medium text-[29px] md:text-6xl text-center">Building high-converting <br/> landing pages for <mark className='text-[#BDBDBD] bg-transparent underline'>content creators</mark>.</animated.h2>
